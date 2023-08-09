@@ -1,6 +1,6 @@
 <template lang="">
     <div>
-        안녕 너는 누구니?
+        <h2>회원가입</h2>
         <sign-up-form @submit="onSubmit" />
     </div>
 </template>
@@ -19,7 +19,8 @@ export default {
     methods: {
         ...mapActions(signUpModule, ['requestSignUpToSpring']),
         async onSubmit (payload) {
-            await this.requestSignUpToSpring(payload)
+            console.log(payload)
+            this.requestSignUpToSpring(payload)
         }
     }    
 }

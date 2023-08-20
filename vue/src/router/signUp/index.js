@@ -1,5 +1,6 @@
 import SignUpPage from "@/views/signUp/SignUpPage.vue";
 import HomeView from "@/views/HomeView";
+import OAuthComplete from "@/views/signUp/OAuthComplete";
 
 const signUpRouter = [
   {
@@ -11,6 +12,11 @@ const signUpRouter = [
     path: "/",
     name: "HomeView",
     component: HomeView,
+  },
+  {
+    path: "/oauth-complete-page",
+    name: "OAuthComplete",
+    component: OAuthComplete,
   },
 ]
 

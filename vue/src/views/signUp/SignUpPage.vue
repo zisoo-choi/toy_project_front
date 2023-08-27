@@ -1,4 +1,4 @@
-<template lang="">
+<template>
     <div>
         <h2>회원가입</h2>
         <sign-up-form @submit="onSubmit" />
